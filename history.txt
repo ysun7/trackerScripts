@@ -1,0 +1,1000 @@
+  189  cd trackerScripts/
+  190  ls -ltr
+  191  date
+  192  ls -ltr runs
+  193  python control_ROC.py 
+  194  exit
+  195  cd trackerScripts/
+  196  python control_cal_tot_8ch.py hv
+  197  exit
+  198  ls -ltr
+  199  cd trackerScripts/
+  200  ls -ltr
+  201  date
+  202  ls -ltr data/
+  203  ls -ltr data/noise_171220_json/
+  204  pwd
+  205  cd trackerScripts/
+  206  ls -ltr data/rm
+  207  rm data/noise_171220_json/*
+  208  rm -rf data/noise_171220_json/
+  209  rm -rf data/noise_171218_json/
+  210  exit
+  211  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  212  ls -ltr
+  213  cd trackerScripts/
+  214  ls -ltr
+  215  python control_cal_tot_8ch.py hv
+  216  python temp.py 20000 >&log1&
+  217  tail -f log1 
+  218  tail log1 
+  219  ls -ltr data
+  220  ls -ltr data/noise_180105_json/
+  221  less data/noise_180105_json/run_0.txt 
+  222  exit
+  223  cd trackerScripts/
+  224  python control_ROC.py 
+  225  exit
+  226  cd trackerScripts/
+  227  python measure_thresholds.py 7
+  228  python measure_thresholds.py 6
+  229  python measure_thresholds.py 4
+  230  python measure_thresholds.py 2
+  231  python measure_thresholds.py 1
+  232  exit
+  233  ls -ltr
+  234  cd trackerScripts/
+  235  ls -ltr
+  236  date
+  237  ls -ltr data/
+  238  ls data/noise_180105_json/ | wc -l
+  239  exit
+  240  cd trackerScripts/
+  241  ls -ltr
+  242  date
+  243  ls -ltr data/
+  244  exit
+  245  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  246  cd trackerScripts/
+  247  python control_ROC.py 
+  248  ls -ltr data/noise_180110_json/
+  249  date
+  250  ls -ltr data/noise_180110_json/
+  251  exit
+  252  cd trackerScripts/
+  253  python measure_thresholds.py 1
+  254  python measure_thresholds.py 6
+  255  python measure_thresholds.py 7
+  256  exit
+  257  cd trackerScripts/
+  258  ls -ltr data/noise_180105_json/
+  259  top
+  260  kill 1289
+  261  ls -ltr log1 
+  262  ls -ltr data/noise_180105_json/
+  263  ls -ltr log1 
+  264  date
+  265  ls -ltr log1 
+  266  ls temp.py 
+  267  rm -rf data/noise_180105_json/
+  268  python control_cal_tot_8ch.py hv
+  269  python temp.py 20000 >&log1&
+  270  tail log1
+  271  tail -f log1
+  272  exit
+  273  cd trackerScripts/
+  274  ls -ltr data/
+  275  ls -ltr data/noise_180110_json/
+  276  date
+  277  ls -ltr data/noise_180110_json/
+  278  date
+  279  exit
+  280  cd trackerScripts/
+  281  python control_ROC.py 
+  282  exit
+  283  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  284  cd trackerScripts/
+  285  python measure_thresholds.py 1
+  286  python measure_thresholds.py 2
+  287  python measure_thresholds.py 4
+  288  python measure_thresholds.py 6
+  289  python measure_thresholds.py 7
+  290  exit
+  291  cd trackerScripts/
+  292  python control_cal_tot_8ch.py hv
+  293  ls readpanel.py
+  294  python temp.py 20000 >&log1&
+  295  ls data/noise_180112_json/ -ltr
+  296  date
+  297  rm -rf data/noise_180110_json/
+  298  ls data/noise_180112_json/ -ltr
+  299  exit
+  300  tramp_perl_file_name_all_completions () { \perl -e 'sub case {
+  301   my $str = shift;
+  302   if ($ARGV[2]) {
+  303    return lc($str);
+  304   }
+  305   else {
+  306    return $str;
+  307   }
+  308  }
+  309  opendir(d, $ARGV[0]) || die("$ARGV[0]: $!\nfail\n");
+  310  @files = readdir(d); closedir(d);
+  311  foreach $f (@files) {
+  312   if (case(substr($f, 0, length($ARGV[1]))) eq case($ARGV[1])) {
+  313    if (-d "$ARGV[0]/$f") {
+  314     print "$f/\n";
+  315    }
+  316    else {
+  317     print "$f\n";
+  318    }
+  319   }
+  320  }
+  321  print "ok\n"
+  322  ' "$1" "$2" "$3" 2>/dev/null; } 2>/dev/null; echo tramp_exit_status $?
+  323  cd trackerScripts/
+  324  python measure_thresholds.py
+  325  exit
+  326  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  327  cd trackerScripts/
+  328  python control_ROC.py 
+  329  python temp.py 20000 >&log1&
+  330  rm data/noise_180112_json/ -rf
+  331  ls -ltr data/noise_180113_json/
+  332  exit
+  333  cd trackerScripts/
+  334  ls data/ -ltr
+  335  ls data/noise_180112_json/ -ltr
+  336  python control_ROC.py 
+  337  python control_cal_tot_8ch.py hv
+  338  exit
+  339  cd trackerScripts/
+  340  ls -ltr 
+  341  date
+  342  ls -ltr daya
+  343  ls -ltr data/
+  344  ls -ltr data/noise_180113_json/
+  345  exit
+  346  cd trackerScripts/
+  347  ls -ltr
+  348  date
+  349  ls -ltr data/noise_180113_json/
+  350  date
+  351  exit
+  352  cd trackerScripts/
+  353  python measure_thresholds.py
+  354  python measure_thresholds.py 7
+  355  python measure_thresholds.py 6
+  356  exit
+  357  cd trackerScripts/
+  358  python control_ROC.py 
+  359  exit
+  360  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  361  cd trackerScripts/
+  362  top
+  363  kill 1179
+  364  python control_cal_tot_8ch.py hv
+  365  ls -ltr runs/
+  366  date
+  367  python control_cal_tot_8ch.py hv
+  368  python temp.py 20000 >&log1&
+  369  ls -ltr data/noise_*
+  370  top
+  371  kill 13668
+  372  ls -ltr data/noise_
+  373  python temp.py 20000 >&log1&
+  374  top
+  375  kill 13702
+  376  ls -ltr data/noise_180113_json/
+  377  date
+  378  python temp.py 20000 >&log1&
+  379  ls -ltr data/noise_
+  380  rm -rf data/noise_180113_json/
+  381  top
+  382  kill 13808
+  383  python control_cal_tot_8ch.py hv
+  384  exit
+  385  cd trackerScripts/
+  386  python control_cal_tot_8ch.py hv
+  387  echo $DISPLAY
+  388  set DISPLAY 0:0
+  389  python control_cal_tot_8ch.py hv
+  390  exit
+  391  xclock
+  392  gimp
+  393  emacs
+  394  vim
+  395  export DISPLAY=:0.0
+  396  firefox
+  397  xinit xclock
+  398  exit
+  399  cd trackerScripts/
+  400  python control_ROC.py 
+  401  exit
+  402  root
+  403  xterm
+  404  sudo apt-get install x11-apps
+  405  cd trackerScripts/
+  406  ls -ltr runs/run_*
+  407  xinit
+  408  ping google.com
+  409  ls /usr/bin/X11/
+  410  xpdf
+  411  xauth list
+  412  mkdir .Xauthority
+  413  xauth list
+  414  rm -rf .Xauthority/
+  415  exit
+  416  touch .Xauthority
+  417  xpdf
+  418  xauth list
+  419  export DISPLAY=:0.0
+  420  xpdf
+  421  exit
+  422  xauth list
+  423  ls .ssh/
+  424  ls ../
+  425  less ../vrusu/.Xauthority 
+  426  sudo
+  427  sudo cp ../vrusu/.Xauthority .
+  428  less .Xauthority 
+  429  xauth list
+  430  xpdf
+  431  exit
+  432  xauth list
+  433  export DISPLAY="127.0.0.1:10.0"
+  434  xpdf
+  435  export DISPLAY=:10.0
+  436  xpdf
+  437  export DISPLAY=:11.0
+  438  xpdf
+  439  exit
+  440  xpdf
+  441  rm .Xauthority 
+  442  xpdf
+  443  exit
+  444  xpdf
+  445  exit
+  446  xpdf
+  447  cd trackerScripts/
+  448  python measure_thresholds.py 
+  449  python measure_thresholds.py 6
+  450  cd trackerScripts/
+  451  python measure_thresholds.py 6
+  452  exit
+  453  echo are you awake
+  454  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  455  cd trackerScripts/
+  456  python measure_thresholds.py 
+  457  python measure_thresholds.py 7
+  458  exit
+  459  cd trackerScripts/
+  460  python control_ROC.py 
+  461  exit
+  462  cd trackerScripts/
+  463  ls data/
+  464  rm -rf data/noise_*
+  465  date
+  466  python control_cal_tot_8ch.py hv
+  467  python temp.py 20000 >&log1&
+  468  ls -ltr data/
+  469  ls -ltr data/noise_180116_json/
+  470  date
+  471  exit
+  472  xpdf
+  473  cd trackerScripts/
+  474  python control_cal_tot_8ch.py hv
+  475  python measure_thresholds.py 6
+  476  python control_cal_tot_8ch.py hv
+  477  test -e /home/ekargian/trackerScripts/ 2>/dev/null; echo tramp_exit_status $?
+  478  cd trackerScripts/
+  479  python control_ROC.py 
+  480  cd trackerScripts/
+  481  python control_ROC.py 
+  482  exit
+  483  cd trackerScripts/
+  484  python control_cal_tot_8ch.py hv
+  485  exit
+  486  cd trackerScripts/
+  487  python control_cal_tot_8ch.py hv
+  488  cd trackerScripts/
+  489  python control_ROC.py 
+  490  cd trackerScripts/
+  491  python control_ROC.py 
+  492  python measure_thresholds.py 7
+  493  python measure_thresholds.py 6
+  494  python control_ROC.py 
+  495  python measure_thresholds.py 6
+  496  exit
+  497  cd trackerScripts/
+  498  python control_cal_tot_8ch.py hv
+  499  cd trackerScripts/
+  500  python control_ROC.py 
+  501  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  502  cd trackerScripts/
+  503  python control_ROC.py 
+  504  python measure_thresholds.py
+  505  python control_ROC.py 
+  506  exit
+  507  cd trackerScripts/
+  508  python control_cal_tot_8ch.py hv
+  509  ls data/
+  510  ls data/noise_180116_json/ -ltr
+  511  python temp.py 20000 >&log1&
+  512  rm -rf data/noise_180116_json/
+  513  exit
+  514  cd trackerScripts/
+  515  ls -ltr data/noise_180117_json/
+  516  date
+  517  ls -ltr data/noise_180117_json/
+  518  exit
+  519  cd trackerScripts/
+  520  top
+  521  kill 2013
+  522  ls data/noise_180117_json/ -ltr
+  523  python control_cal_tot_8ch.py hv
+  524  exit
+  525  cd trackerScripts/
+  526  python control_cal_tot_8ch.py hv
+  527  xpdf
+  528  exit
+  529  xpdf
+  530  echo $DISPLAY
+  531  exit
+  532  xpdf
+  533  exit
+  534  xpdf
+  535  exit
+  536  xpdf
+  537  less .Xauthority 
+  538  history
+  539  xauth list
+  540  export DISPLAY=:11.0
+  541  xpdf
+  542  exit
+  543  xauth list
+  544  export DISPLAY=:10.0
+  545  xpdf
+  546  export DISPLAY=:11.0
+  547  xpdf
+  548  xauth list
+  549  xpdf
+  550  export DISPLAY=:11.0
+  551  xpdf
+  552  history 
+  553  rm .Xauthority 
+  554  exit
+  555  xpdf
+  556  xauth list
+  557  export DISPLAY=:10.0
+  558  export DISPLAY=:0.0
+  559  xpdf
+  560  exit
+  561  xpdf
+  562  export DISPLAY=:0.0
+  563  xpdf
+  564  exit
+  565  xpdf
+  566  cp ../vrusu/.Xauthority .
+  567  sudo cp ../vrusu/.Xauthority .
+  568  exit
+  569  xpdf
+  570  exit
+  571  export DISPLAY=:11.0
+  572  xpdf
+  573  exit
+  574  xpdf
+  575  xauth list
+  576  rm .Xauthority
+  577  xauth list
+  578  exit
+  579  xauth list
+  580  rm .Xauthority
+  581  rm .Xauthority-
+  582  ls -lar
+  583  rm .Xauthority-l
+  584  rm .Xauthority-c
+  585  ls -la
+  586  exit
+  587  ls -la
+  588  xauth list
+  589  ls -la
+  590  xauth -b
+  591  ls -la
+  592  xauth list
+  593  touch .Xauthority
+  594  xauth list
+  595  xauth -b
+  596  xpdf
+  597  startlxde
+  598  exit
+  599  startlxde
+  600  less .Xauthority 
+  601  xauth list
+  602  startlxde
+  603  rm .Xauthority 
+  604  exit
+  605  ls -la
+  606  ls .ssh/
+  607  exit
+  608  startlxde
+  609  exit
+  610  cp ~rpi/.Xauthority 
+  611  ls ../
+  612  ls cp ../vrusu/.Xauthority .
+  613  cp ../vrusu/.Xauthority .
+  614  sudo cp ../vrusu/.Xauthority .
+  615  exit
+  616  startlxde
+  617  export DISPLAY=:11.0
+  618  startlxde
+  619  export DISPLAY=:10.0
+  620  startlxde
+  621  exit
+  622  xpdf
+  623  x
+  624  xpdf
+  625  xlist auth
+  626  xauth list
+  627  sudo chmod u+aw .Xauthority
+  628  sudo chmod u+rw .Xauthority
+  629  xauth list
+  630  xpdf
+  631  exit
+  632  xpdf
+  633  xauth list
+  634  xpdf
+  635  exit
+  636  xpdf
+  637  exit
+  638  xeyes
+  639  xpdf
+  640  ls -la
+  641  rm .Xauthority-c
+  642  rm .Xauthority-l
+  643  chown ekargian .Xauthority 
+  644  sudo chown ekargian .Xauthority 
+  645  ls -la
+  646  sudo chown ekargian:ekargian .Xauthority 
+  647  ls -la
+  648  exit
+  649  xauth list
+  650  xpdf
+  651  export DISPLAY=:10.0
+  652  xpdf
+  653  export DISPLAY=:11.0
+  654  xpdf
+  655  export DISPLAY=:12.0
+  656  xpdf
+  657  exit
+  658  export DISPLAY=:11.0
+  659  xpdf
+  660  sudo reboot now
+  661  cd trackerScripts/
+  662  python measure_thresholds.py
+  663  exit
+  664  xpdf
+  665  echo $DISPLAY
+  666  xauth list
+  667  cd trackerScripts/
+  668  python control_cal_tot_8ch.py hv
+  669  python control_ROC.py 
+  670  python temp.py 20000 >&log1&
+  671  top
+  672  ls -ltr data/noise_180117_json/
+  673  exit
+  674  tramp_perl_file_name_all_completions () { \perl -e 'sub case {
+  675   my $str = shift;
+  676   if ($ARGV[2]) {
+  677    return lc($str);
+  678   }
+  679   else {
+  680    return $str;
+  681   }
+  682  }
+  683  opendir(d, $ARGV[0]) || die("$ARGV[0]: $!\nfail\n");
+  684  @files = readdir(d); closedir(d);
+  685  foreach $f (@files) {
+  686   if (case(substr($f, 0, length($ARGV[1]))) eq case($ARGV[1])) {
+  687    if (-d "$ARGV[0]/$f") {
+  688     print "$f/\n";
+  689    }
+  690    else {
+  691     print "$f\n";
+  692    }
+  693   }
+  694  }
+  695  print "ok\n"
+  696  ' "$1" "$2" "$3" 2>/dev/null; } 2>/dev/null; echo tramp_exit_status $?
+  697  cd trackerScripts/
+  698  top
+  699  ls -ltr data/noise_180117_json/
+  700  date
+  701  cd trackerScripts/
+  702  exit
+  703  cd trackerScripts/
+  704  ls -ltr data/noise_180117_json/
+  705  date
+  706  top
+  707  exit
+  708  cd trackerScripts/
+  709  top
+  710  kill 1005
+  711  top
+  712  python temp.py 20000 >&log1&
+  713  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  714  cd trackerScripts/
+  715  top
+  716  ls data/noise_180117_json/ | wc -l
+  717  top
+  718  top | grep python
+  719  top | grep ekargian
+  720  ls -ltr data/noise_180117_json/
+  721  date
+  722  rm -rf data/noise_180117_json/
+  723  python temp.py 20000 >&log1&
+  724  ls -ltr data/noise_180126_json/
+  725  exit
+  726  cd trackerScripts/
+  727  ls -ltr data/noise_180126_json/
+  728  date
+  729  ls -ltr data/noise_180126_json/ | wc -l
+  730  exit
+  731  cd trackerScripts/
+  732  ls -ltr data/noise_180126_json/ | wc -l
+  733  ls -ltr data/noise_180126_json/ 
+  734  date
+  735  ls -ltr data/noise_180126_json/ 
+  736  exit
+  737  cd trackerScripts/
+  738  ls data/noise_180126_json/ -ltr
+  739  exit
+  740  cd trackerScripts/
+  741  ls data/noise_180126_json/ -ltr
+  742  exit
+  743  cd trackerScripts/
+  744  ls data/noise_180126_json/ -ltr
+  745  exit
+  746  cd trackerScripts/
+  747  top | grep python
+  748  top
+  749  top | grep python
+  750  kill 27420
+  751  top | grep python
+  752  python control_cal_tot_8ch.py hv
+  753  python measure_thresholds.py 3
+  754  python control_ROC.py 
+  755  python measure_thresholds.py 3
+  756  python control_ROC.py 
+  757  python measure_thresholds.py 3
+  758  python control_ROC.py 
+  759  python measure_thresholds.py 3
+  760  python control_ROC.py 
+  761  python measure_thresholds.py 3
+  762  python control_cal_tot_8ch.py hv
+  763  python control_ROC.py 
+  764  python control_cal_tot_8ch.py hv
+  765  exit
+  766  cd trackerScripts/
+  767  python control_cal_tot_8ch.py hv
+  768  python measure_thresholds.py 3
+  769  python control_ROC.py 
+  770  python control_cal_tot_8ch.py hv
+  771  python measure_thresholds.py 3
+  772  python control_ROC.py 
+  773  python control_cal_tot_8ch.py hv
+  774  python control_ROC.py 
+  775  python control_cal_tot_8ch.py hv
+  776  python control_ROC.py 
+  777  python control_cal_tot_8ch.py hv
+  778  python measure_thresholds.py 3
+  779  cd trackerScripts/
+  780  python control_cal_tot_8ch.py hv
+  781  ls -ltr runs/
+  782  date
+  783  rm runs/run_*
+  784  python control_cal_tot_8ch.py hv
+  785  rm runs/run_*
+  786  python control_cal_tot_8ch.py hv
+  787  rm runs/run_*
+  788  python control_cal_tot_8ch.py hv
+  789  rm runs/run_*
+  790  python control_cal_tot_8ch.py hv
+  791  rm runs/run_*
+  792  python control_cal_tot_8ch.py hv
+  793  rm runs/run_*
+  794  python control_cal_tot_8ch.py hv
+  795  rm runs/run_*
+  796  python control_cal_tot_8ch.py hv
+  797  rm runs/run_*
+  798  python control_cal_tot_8ch.py hv
+  799  rm runs/run_*
+  800  python control_cal_tot_8ch.py hv
+  801  rm runs/run_*
+  802  python control_cal_tot_8ch.py hv
+  803  exit
+  804  cd trackerScripts/
+  805  python control_ROC.py 
+  806  python control_cal_tot_8ch.py hv
+  807  restart
+  808  cat /proc/cpuinfo 
+  809  cat /proc/cpu/alignment 
+  810  cat /proc/meminfo 
+  811  cat /proc/version 
+  812  python control_cal_tot_8ch.py hv
+  813  shutdown -r now
+  814  cd trackerScripts/
+  815  python control_cal_tot_8ch.py hv
+  816  exit
+  817  cd trackerScripts/
+  818  python control_cal_tot_8ch.py hv
+  819  python control_ROC.py 
+  820  python control_cal_tot_8ch.py hv
+  821  python control_ROC.py 
+  822  python control_cal_tot_8ch.py hv
+  823  python control_ROC.py 
+  824  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  825  cd trackerScripts/
+  826  python control_cal_tot_8ch.py hv
+  827  python measure_thresholds.py 2
+  828  python control_ROC.py 
+  829  python measure_thresholds.py
+  830  python control_cal_tot_8ch.py hv
+  831  python measure_thresholds.py 1
+  832  exit
+  833  cd trackerScripts/
+  834  python control_ROC.py 
+  835  python measure_thresholds.py 1
+  836  exit
+  837  cd trackerScripts/
+  838  python measure_thresholds.py 1
+  839  python control_cal_tot_8ch.py hv
+  840  exit
+  841  python control_cal_tot_8ch.py hv
+  842  cd trackerScripts/
+  843  python control_cal_tot_8ch.py hv
+  844  python measure_thresholds.py 1
+  845  python control_cal_tot_8ch.py hv
+  846  python control_ROC.py 
+  847  python control_cal_tot_8ch.py hv
+  848  python temp.py 20000 >&log1&
+  849  ls -ltr data/
+  850  date
+  851  top
+  852  kill 4690
+  853  ls -ltr data/
+  854  ls -ltr data/noise_180126_json/
+  855  rm -rf data/noise_180126_json/
+  856  python temp.py 20000 >&log1&
+  857  ls -ltr data/noise_180212_json/
+  858  exit
+  859  cd trackerScripts/
+  860  python measure_thresholds.py 2
+  861  python control_ROC.py 
+  862  python measure_thresholds.py 2
+  863  python measure_thresholds.py 
+  864  python measure_thresholds.py 1
+  865  python control_ROC.py 
+  866  python measure_thresholds.py 1
+  867  python control_ROC.py 
+  868  python measure_thresholds.py 2
+  869  python control_ROC.py 
+  870  python measure_thresholds.py 2
+  871  python control_ROC.py 
+  872  python measure_thresholds.py 4
+  873  python control_ROC.py 
+  874  python measure_thresholds.py 4
+  875  python control_ROC.py 
+  876  python measure_thresholds.py 6
+  877  python control_ROC.py 
+  878  python measure_thresholds.py 6
+  879  python control_ROC.py 
+  880  python measure_thresholds.py 6
+  881  python measure_thresholds.py 7
+  882  python control_ROC.py 
+  883  python measure_thresholds.py 7
+  884  python control_ROC.py 
+  885  python measure_thresholds.py 
+  886  exit
+  887  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  888  cd trackerScripts/
+  889  cat log1 
+  890  top
+  891  top | grep python
+  892  python control_cal_tot_8ch.py hv
+  893  ifconfig
+  894  ls /dev/USB0
+  895  python control_cal_tot_8ch.py hv
+  896  top
+  897  kill 5355
+  898  python measure_thresholds.py 
+  899  top | grep python
+  900  python measure_thresholds.py 
+  901  cat log1
+  902  python measure_thresholds.py 
+  903  exit
+  904  cd trackerScripts/
+  905  ls -ltr data/noise_180212_json/
+  906  top
+  907  ls -ltr data/noise_180212_json/
+  908  date
+  909  python temp.py 20000 >&log1&
+  910  ls -ltr data/noise_180212_json/
+  911  cat log1 
+  912  ls -ltr data/noise_180212_json/
+  913  date
+  914  python temp.py 20000 >&log1&
+  915  ls -ltr data/noise_180212_json/
+  916  exit
+  917  cd trackerScripts/
+  918  python measure_thresholds.py 
+  919  exit
+  920  cd trackerScripts/
+  921  exit
+  922  sudo reboot 
+  923  cd trackerScripts/
+  924  python temp.py 20000 >&log1&
+  925  ls -ltr data/noise_180212_json/
+  926  date
+  927  top | grep python
+  928  kill 1173
+  929  exit
+  930  cd trackerScripts/
+  931  python measure_thresholds.py 
+  932  python control_ROC.py 
+  933  python measure_thresholds.py 
+  934  python control_ROC.py 
+  935  python measure_thresholds.py 
+  936  sudo reboot
+  937  python control_ROC.py 
+  938  python measure_thresholds.py 
+  939  python control_ROC.py 
+  940  python measure_thresholds.py 
+  941  python temp.py 20000 >&log1&
+  942  ls -ltr data/noise_180212_json/
+  943  exit
+  944  python temp.py 20000 >&log1&
+  945  ls -ltr data/noise_180212_json/
+  946  ls -lrt data/noise_180212_json/
+  947  ls -lrth data/noise_180212_json/
+  948  cat log1
+  949  ls -lrth data/noise_180212_json/
+  950  date
+  951  ls -lrh data/noise_180212_json/
+  952  ls -lh data/noise_180212_json/
+  953  top | grep python
+  954  cat log1
+  955  top | grep python
+  956  sudo reboot
+  957  cd trackerScripts/
+  958  python measure_thresholds.py 
+  959  python temp.py 20000 >&log1&
+  960  ls -lh data/noise_180212_json/
+  961  ls -ltrh data/noise_180212_json/
+  962  date
+  963  cat log1
+  964  ls -ltrh data/noise_180212_json/
+  965  top | grep python
+  966  python temp.py 20000 >&log1&
+  967  top | grep python
+  968  kill %2
+  969  reboot
+  970  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  971  cd trackerScripts/
+  972  python measure_thresholds.py 
+  973  python control_ROC.py 
+  974  python temp.py 20000 >&log1&
+  975  ls -ltr data/noise_180213_json/
+  976  date
+  977  ls -ltr data/noise_180213_json/
+  978  date
+  979  tail log1
+  980  exit
+  981  cd trackerScripts/
+  982  python measure_thresholds.py 
+  983  exit
+  984  cd trackerScripts/
+  985  python measure_thresholds.py 
+  986  sudo reboot
+  987  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  988  cd trackerScripts/
+  989  python control_ROC.py 
+  990  python measure_thresholds.py 
+  991  python control_ROC.py 
+  992  python temp.py 20000 >&log1&
+  993  ls data/noise_180214_json/
+  994  rm -rf data/noise_180213_json/
+  995  rm -rf data/noise_180212_json/
+  996  ls -ltr data/noise_180214_json/
+  997  date
+  998  ls -ltr data/noise_180214_json/
+  999  date
+ 1000  ls -ltr data/noise_180214_json/
+ 1001  date
+ 1002  ls -ltr data/noise_180214_json/
+ 1003  date
+ 1004  ls -ltr data/noise_180214_json/
+ 1005  date
+ 1006  ls -ltr data/noise_180214_json/
+ 1007  date
+ 1008  exit
+ 1009  tramp_perl_file_name_all_completions () { \perl -e 'sub case {
+ 1010   my $str = shift;
+ 1011   if ($ARGV[2]) {
+ 1012    return lc($str);
+ 1013   }
+ 1014   else {
+ 1015    return $str;
+ 1016   }
+ 1017  }
+ 1018  opendir(d, $ARGV[0]) || die("$ARGV[0]: $!\nfail\n");
+ 1019  @files = readdir(d); closedir(d);
+ 1020  foreach $f (@files) {
+ 1021   if (case(substr($f, 0, length($ARGV[1]))) eq case($ARGV[1])) {
+ 1022    if (-d "$ARGV[0]/$f") {
+ 1023     print "$f/\n";
+ 1024    }
+ 1025    else {
+ 1026     print "$f\n";
+ 1027    }
+ 1028   }
+ 1029  }
+ 1030  print "ok\n"
+ 1031  ' "$1" "$2" "$3" 2>/dev/null; } 2>/dev/null; echo tramp_exit_status $?
+ 1032  cd trackerScripts/
+ 1033  ls -ltr data/noise_180214_json/
+ 1034  date
+ 1035  exit
+ 1036  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+ 1037  cd trackerScripts/
+ 1038  ls -ltr data/noise_180214_json/
+ 1039  date
+ 1040  top | grep python
+ 1041  ls -ltr data/noise_180214_json/
+ 1042  kill 1038
+ 1043  top | grep python
+ 1044  python control_ROC.py 
+ 1045  rm data/noise_180214_json/ -rf
+ 1046  python temp.py 20000 >&log1&
+ 1047  ls -ltr data/noise_180215_json/
+ 1048  exit
+ 1049  cd trackerScripts/
+ 1050  ls -ltr data/noise_180215_json/
+ 1051  date
+ 1052  exit
+ 1053  cd trackerScripts/
+ 1054  python control_ROC.py 
+ 1055  exit
+ 1056  cd trackerScripts/
+ 1057  ls -ltr data/noise_180215_json/
+ 1058  date
+ 1059  top | grep python
+ 1060  kill 19952
+ 1061  ls -ltr data/noise_180215_json/
+ 1062  mkdir data/noise_180216_json/
+ 1063  python control_ROC.py 
+ 1064  python control_cal_tot_8ch.py hv
+ 1065  exit
+ 1066  exec env ENV='' HISTFILE=/dev/null PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+ 1067  cd trackerScripts/
+ 1068  ls data/
+ 1069  ls data/noise_180216_json/
+ 1070  python temp.py 20000 >&log1&
+ 1071  ls -ltr data/noise_180216_json/
+ 1072  rm data/noise_180215_json/ -rf
+ 1073  ls -ltr data/noise_180216_json/
+ 1074  cd ..
+ 1075  ls /etc/group
+ 1076  cat /etc/group
+ 1077  sudo adduser murat
+ 1078  cd ../murat/
+ 1079  ls 
+ 1080  cp -r ../ekargian/trackerScripts/
+ 1081  cp -r ../ekargian/trackerScripts/*
+ 1082  cp -r ../ekargian/trackerScripts/ .
+ 1083  ls -l
+ 1084  cd ../ekargian/
+ 1085  cp trackerScripts/ ../murat/
+ 1086  cp -r trackerScripts/ ../murat/
+ 1087  ls -al .
+ 1088  ls -al ~murat
+ 1089  chmod 775 ~murat
+ 1090  sudo chmod 775 ~murat
+ 1091  cp -r trackerScripts/ ../murat/.
+ 1092  ls -al ~murat
+ 1093  sudo chmod 777 ~murat
+ 1094  cp -r trackerScripts/ ../murat/
+ 1095  cd ../murat/
+ 1096  ls -ltr
+ 1097  cd trackerScripts/
+ 1098  ls -ltr
+ 1099  mv ~ekargian/id_rsa.pub 
+ 1100  cd ../
+ 1101  mkdir .ssh
+ 1102  mv ~ekargian/id_rsa.pub .ssh/
+ 1103  mv .ssh/id_rsa.pub .ssh/authorized_keys
+ 1104  sudo chmod 600 .ssh/authorized_keys 
+ 1105  exit
+ 1106  sudo chmod 700 ~murat/.ssh/
+ 1107  ls -ltr ~murat/.ssh/
+ 1108  ls -ltr ~murat/.ssh
+ 1109  sudo chmod 700 ~murat/.ssh
+ 1110  exit
+ 1111  ls -al /home
+ 1112  ls -al /home/murat
+ 1113  chown -R murat:murat ~murat/.ssh
+ 1114  chmod 777 ~/murat/.ssh
+ 1115  chmod 777 ~murat/.ssh
+ 1116  chown -R murat:murat ~murat/.ssh
+ 1117  ls -al ~murat/.ssh/
+ 1118  chown murat:murat ~murat/.ssh/authorized_keys 
+ 1119  sudo chown murat:murat ~murat/.ssh/authorized_keys 
+ 1120  ls -al ~murat/.ssh/
+ 1121  chmod 700 ~/murat/.ssh
+ 1122  sudo chmod 700 ~murat/.ssh
+ 1123  ls -al ~murat/.
+ 1124  sudo chown murat:murat ~murat/.ssh
+ 1125  ls -al ~murat/.
+ 1126  sudo chown -R murat:murat ~murat/trackerScripts
+ 1127  ls -al ~murat/.
+ 1128  exit
+ 1129  cat /etc/dhcpcd.conf
+ 1130  cat /etc/dhcp/dhclient.conf 
+ 1131  exit
+ 1132  cat .ssh/authorized_keys 
+ 1133  ls -al .ssh/authorized_keys 
+ 1134  sudo ls -al ~murat/.ssh/authorized_keys 
+ 1135  sudo chmod 644  /home/murat/.ssh/authorized_keys
+ 1136  ls -al .ssh/authorized_keys 
+ 1137  sudo ls -al ~murat/.ssh/authorized_keys 
+ 1138  ls -al .ssh
+ 1139  sudo ls -al ~murat/.ssh
+ 1140  sudo chmod 755  ~murat/.ssh
+ 1141  exit
+ 1142  which emacs
+ 1143  which vi
+ 1144  which vim
+ 1145  cat ~murat
+ 1146  ls -al ~murat
+ 1147  ls -al ~murat/.ssh/authorized_keys 
+ 1148  cat ~murat/.ssh/authorized_keys 
+ 1149  cat ~/.ssh/authorized_keys 
+ 1150  exit
+ 1151  tramp_perl_file_name_all_completions () { \perl -e 'sub case {
+ 1152   my $str = shift;
+ 1153   if ($ARGV[2]) {
+ 1154    return lc($str);
+ 1155   }
+ 1156   else {
+ 1157    return $str;
+ 1158   }
+ 1159  }
+ 1160  opendir(d, $ARGV[0]) || die("$ARGV[0]: $!\nfail\n");
+ 1161  @files = readdir(d); closedir(d);
+ 1162  foreach $f (@files) {
+ 1163   if (case(substr($f, 0, length($ARGV[1]))) eq case($ARGV[1])) {
+ 1164    if (-d "$ARGV[0]/$f") {
+ 1165     print "$f/\n";
+ 1166    }
+ 1167    else {
+ 1168     print "$f\n";
+ 1169    }
+ 1170   }
+ 1171  }
+ 1172  print "ok\n"
+ 1173  ' "$1" "$2" "$3" 2>/dev/null; } 2>/dev/null; echo tramp_exit_status $?
+ 1174  ls -al
+ 1175  sudo chown murat:murat id_rsa.pub.murat 
+ 1176  sudo mv id_rsa.pub.murat ~murat/.ssh/authorized_keys 
+ 1177  ls -al ~murat/.ssh/
+ 1178  ls -al ~/.ssh/
+ 1179  sudo chmod 755 ~murat
+ 1180  ls -al ~murat
+ 1181  ls -al .
+ 1182  top | grep python
+ 1183  cd trackerScripts/
+ 1184  ls data/noise_180216_json/ -ltr
+ 1185  date
+ 1186  tail log1
+ 1187  history
+ 1188  history >> history.txt
